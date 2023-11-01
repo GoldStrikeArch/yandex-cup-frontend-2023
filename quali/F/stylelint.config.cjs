@@ -5,12 +5,12 @@ module.exports = {
     'stylelint-prettier/recommended',
   ],
   rules: {
-    // 'at-rule-no-unknown': [
-    //   true,
-    //   {
-    //     'ignore-at-rules': ['mixin', 'mixin-content', 'define-mixin'],
-    //   },
-    // ],
+    'at-rule-no-unknown': [
+      true,
+      {
+        'ignore-at-rules': ['mixin', 'mixin-content', 'define-mixin'],
+      },
+    ],
     'selector-max-id': 0,
   },
 };

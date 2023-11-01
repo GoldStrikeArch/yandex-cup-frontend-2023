@@ -7,7 +7,7 @@
     "forceConsistentCasingInFileNames": true,
     "lib": ["ES2016", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "Classic",
     "noImplicitAny": true,
     "outDir": "dist",
     "paths": {
@@ -19,8 +19,7 @@
     "strictNullChecks": true,
     "target": "ES2016",
     "typeRoots": ["node_modules/@types"],
-    "resolveJsonModule": true,
     "verbatimModuleSyntax": true
   },
-  "exclude": ["node_modules", "config", "public", "webpack", "src/helpers/foxsay"]
+  "exclude": ["node_modules", "config", "public", "webpack"]
 }

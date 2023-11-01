@@ -3,4 +3,3 @@ export * from './css.js';
 export * from './fonts.js';
 export * from './images.js';
 export * from './scripts.js';
-export * from './hehe.js';

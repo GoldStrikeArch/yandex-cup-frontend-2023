@@ -1,6 +1,6 @@
 {
   "name": "breaking-changes",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "yarn watch",
     "prod": "webpack --progress --config webpack.config.babel.js",

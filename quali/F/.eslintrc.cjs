@@ -1,7 +1,6 @@
-/* eslint-disable prettier/prettier */
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser',
+  parser: '@typescript-eslint',
   plugins: ['@typescript-eslint'],
   env: {
     es6: true,
@@ -10,10 +9,10 @@ module.exports = {
     browser: true,
   },
   extends: [
-    'eslint:recommended',
+    'eslint/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:jest-formatting/recommended',
-    // 'plugin:prettier/recommended',
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
