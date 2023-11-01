@@ -31,12 +31,13 @@
 // console.log('towers' in artObject) //-> false
 // console.log(artObject.$getter('towers')) //-> [ 'Oko', 'Neva' ]
 // console.log(artObject.$redRose) //-> 11101
-console.log(artObject.$getTransports()) //-> [ 'Park Kultury', 'Delovoy Center', 'B', 'c910', '379' ]
+// console.log(artObject.$getTransports()) //-> [ 'Park Kultury', 'Delovoy Center', 'B', 'c910', '379' ]
 
 
 // -------- INITIAL 
 
-// helpers
+
+// Partially solved (24/40) version
 const lightSwitch = function() {
   for (let key in this) {
     if (!globalThis[key]) {
@@ -53,9 +54,7 @@ const getter = function (key) {
   return globalThis.state[key];
 };
 
-module.exports = { lightSwitch, getter };
 
-// example
 
 const artObject = {
   $redRose: 11101,
@@ -88,3 +87,5 @@ console.log(artObject.$getter("obj")); //-> [ 'Oko', 'Neva' ]
 console.log(artObject.$redRose); //-> 11101
 console.log(artObject.$qwe); //-> 11101
 console.log(artObject.$getTransports()); //-> [ 'Park Kultury', 'Delovoy Center', 'B', 'c910', '379' ]
+
+module.exports = { lightSwitch, getter };

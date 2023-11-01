@@ -1,4 +1,4 @@
-// Initial version is commented out
+// INITIAL ------
 
 // const currentRandomizer = [];
 
@@ -44,6 +44,7 @@
 
 // module.exports = { draw };
 
+// INITIAL ------
 
 // Solved version
 /**
